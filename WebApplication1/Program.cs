@@ -16,7 +16,7 @@ if (app.Environment.IsDevelopment())
 }
 app.MapControllerRoute(
   name: "default",
-  pattern: "{controller=Home}/{action=Index}/{id?}");
+  pattern: "{calc=Home}/{index=Index}/{a?}/{b?}/{c?}");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
